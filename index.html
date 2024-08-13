@@ -9,6 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="icon" type="image/x-icon" href="img/logo.jpg" style="border-radius: 50%;">
     <title>Thy's Corner</title>
     
@@ -40,8 +43,8 @@
         </section>
         
         <section class=" banner row">
-            <div class="col images">
-                <img src="img/thy5.jpg" alt="thy">
+            <div class="col images" id="img">
+                <img src="img/thy5.jpg" alt="thy" id="thy">
             </div>
             <div class="col text">
                 <span>
@@ -69,61 +72,103 @@
                 <h2>SẢN PHẨM NỔI BẬT</h2>
             </div>
             <div class="row content">
-               <div class="items col-sm">
-                   <div>
-                       <img src="img/bltm.jpg" alt="bltm">
-                   </div>
-                   <div class="items-content">
-                       <a href="">
-                           Bông lan trứng muối
-                           <p>
-                               50.000
-                           </p>
-                       </a>
-                   </div>
-               </div>
-               
-               <div class="items col-sm">
-                   <div>
-                       <img src="img/su.jpg" alt="bsk">
-                   </div>
-                   <div class="items-content">
-                       <a href="">
-                           Bánh su kem
-                           <p>
-                               25.000
-                           </p>
-                       </a>
-                   </div>
-               </div>
-               
-               <div class="items col-sm">
-                   <div>
-                       <img src="img/phomai.jpg" alt="pm">
-                   </div>
-                   <div class="items-content">
-                       <a href="">
-                           Bánh phomai
-                           <p>
-                              25.000vnđ 
-                           </p>
-                       </a>
-                   </div>
-               </div>
-               
-               <div class="items col-sm">
-                   <div>
-                       <img src="img/tiramisu.jpg" alt="tiramisu">
-                   </div>
-                   <div class="items-content">
-                       <a href="">
-                           Bông tiramisu
-                           <p>
-                               30.000
-                           </p>
-                       </a>
-                   </div>
-               </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide items">
+                          <div>
+                              <img src="img/sn.jpg" alt="sn">
+                          </div>
+                          <div class="items-content">
+                              <a href="">
+                                  Bánh sinh nhật ngọt ngào
+                                  <p>
+                                      50.000
+                                  </p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide items">
+                          <div>
+                              <img src="img/dau.jpg" alt="dau">
+                          </div>
+                          <div class="items-content">
+                              <a href="">
+                                  Bánh sinh nhật dâu tây
+                                  <p>
+                                      250.000
+                                  </p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide items">
+                          <div>
+                              <img src="img/lũ.jpg" alt="bsn">
+                          </div>
+                          <div class="items-content">
+                              <a href="">
+                                  Bánh sinh nhật lux
+                                  <p>
+                                      250.000
+                                  </p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide items">
+                          <div>
+                              <img src="img/black.jpg" alt="black">
+                          </div>
+                          <div class="items-content">
+                              <a href="">
+                                  Bánh sinh nhật tông đen
+                                  <p>
+                                      300.000
+                                  </p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide items">
+                          <div>
+                              <img src="img/phomai.jpg" alt="pm">
+                          </div>
+                          <div class="items-content">
+                              <a href="">
+                                  Bông lan sốt phomai
+                                  <p>
+                                      25.000
+                                  </p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide items">
+                          <div>
+                              <img src="img/su.jpg" alt="su">
+                          </div>
+                          <div class="items-content">
+                              <a href="">
+                                  Bánh su kem
+                                  <p>
+                                      25.000
+                                  </p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide items">
+                          <div>
+                              <img src="img/tiramisu.jpg" alt="tiramisu">
+                          </div>
+                          <div class="items-content">
+                              <a href="">
+                                    Tiramisu
+                                  <p>
+                                      50.000
+                                  </p>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                      <div class="swiper-button-prev text-white"></div>
+                      <div class="swiper-button-next text-white"></div>
+                  </div>
            </div>
         </section>
        
@@ -152,5 +197,26 @@
   <!-- </footer>    -->
     
     <script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          autoplay: {
+            delay: 1000, 
+            disableOnInteraction: true, 
+        },
+      });
+    </script>
 </body>
 </html>

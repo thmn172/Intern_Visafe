@@ -9,3 +9,18 @@ function loadComponents(){
     loadComponent('../component/footer.html', 'footer');
 }
 window.onload = loadComponents;
+
+var img = document.getElementById('img')
+document.addEventListener("onLoad", function() {
+    var imageContainer = img;
+
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                imageContainer.classList.add("visible");
+            }
+        });
+    });
+
+    observer.observe(imageContainer);
+});
