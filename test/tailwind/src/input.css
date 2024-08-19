@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-image{
+    height: 390px;
+}
+.sticky-content-active{
+    background-color: #ffffff;
+    width: 100%;
+    color: black;
+    margin-top:-1px;
+    border-radius: 0;
+    align-items: center;
+    border-bottom: solid 0.5px #dbdada;
+}
+.sticky-content-active::before{
+    content: url('https://statics-pc.saostar.vn/static/icons/logoSaostarTapchi.svg?v=1.2');
+}
+.bg-gradient-to-r:hover{
+    background: linear-gradient(to right, #eed366, #f56b09);
+}
